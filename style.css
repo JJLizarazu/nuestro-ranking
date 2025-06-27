@@ -1,0 +1,218 @@
+/* Estilos Generales y Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #e91e63; /* Un rosa juvenil */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilos de la Página Principal (index.html) */
+#category-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.category-btn {
+    display: block;
+    background-image: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Sección de Comparación */
+.comparator {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.comparator h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.textarea-container {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    resize: vertical;
+}
+
+#compare-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#compare-btn:hover {
+    background-color: #218838;
+}
+
+#comparison-result table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#comparison-result th, #comparison-result td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#comparison-result th {
+    background-color: #f2f2f2;
+}
+
+.match {
+    background-color: #d4edda; /* Verde para coincidencias exactas */
+    color: #155724;
+}
+
+.near-match {
+    background-color: #fff3cd; /* Amarillo para coincidencias en otra posición */
+    color: #856404;
+}
+
+
+/* Estilos de la Página de Ranking (ranking.html) */
+.ranking-area {
+    display: flex;
+    gap: 15px;
+    flex-direction: column; /* Apilado en móvil */
+}
+
+.list-container {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    flex: 1;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.list-container h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #e91e63;
+}
+
+.rank-list {
+    min-height: 100px;
+    padding: 10px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    counter-reset: ranked-items; /* Para numerar los items */
+}
+
+.rank-item {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: grab;
+    border: 1px solid #eee;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.rank-item:active {
+    cursor: grabbing;
+}
+
+/* Numeración automática para la lista de ranking */
+#ranked-list .rank-item::before {
+    counter-increment: ranked-items;
+    content: counter(ranked-items) ". ";
+    font-weight: 700;
+    color: #e91e63;
+    margin-right: 10px;
+}
+
+
+#share-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background-image: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#share-button:hover {
+    transform: scale(1.02);
+}
+
+.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #e91e63;
+}

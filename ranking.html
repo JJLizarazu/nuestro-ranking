@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rankeando...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container ranking-container">
+        <h1 id="ranking-title">Cargando...</h1>
+        <p class="subtitle">Arrastra los elementos para ordenarlos.</p>
+
+        <div class="ranking-area">
+            <div class="list-container">
+                <h3>Elementos a clasificar</h3>
+                <div id="items-list" class="rank-list">
+                    </div>
+            </div>
+
+            <div class="list-container">
+                <h3>Tu Ranking aqui!</h3>
+                <div id="ranked-list" class="rank-list">
+                    </div>
+            </div>
+        </div>
+
+        <button id="share-button">Finalizar y Compartir</button>
+         <a href="index.html" class="back-link">← Volver al inicio</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
