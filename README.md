@@ -2,6 +2,7 @@
 
 ## LINK
 
+[Visita la aplicación aquí](https://jjlizarazu.github.io/nuestro-ranking/)
 
 Una aplicación web simple e interactiva que permite visualizar y administrar un ranking personalizado. Ideal para competencias, juegos o votaciones internas.
 
